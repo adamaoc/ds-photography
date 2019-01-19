@@ -1,0 +1,99 @@
+@import "./styles/variables";
+@import "./styles/reboot";
+
+body {
+  background: $black;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #555;
+  z-index: 100;
+  padding: 0.25rem 2rem;
+  display: block;
+  font-weight: bolder;
+  transition: all ease-in-out 300ms;
+  border-radius: 0 5px 0px 0;
+  text-align: center;
+  &:hover {
+    background: rgba(255,255,255,0.7);
+    text-decoration: none;
+    color: #333;
+  }
+}
+.navwrap {
+  background: rgba(white, 0.4);
+  border-radius: 0 3px 3px 0;
+  width: 150px;
+  margin-top: 6em;
+}
+.nav {
+  a {
+    color: #777;
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    transition: all ease-in-out 300ms;
+    &:hover {
+      color: #444;
+      text-decoration: none;
+      background: rgba(white, 0.7);
+    }
+  }
+}
+
+.homepage-wrap {
+  z-index: -1;
+  background-image: url('../public/banners/dt_web.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.homepage-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 5em;
+  span {
+    font-size: 2.5rem;
+    max-width: 390px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem
+  }
+}
+
+.social-nav {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #888;
+  padding: 0.5em;
+  
+  a {
+    padding: 0.5rem;
+  }
+}
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #eee;
+  opacity: 0.7;
+  p {
+    font-size: 10px;
+    padding-left: 1em;
+  }
+}
