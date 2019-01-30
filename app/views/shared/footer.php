@@ -12,7 +12,7 @@
       fullname: "<?= $data['user_data']['user']['name'] ?>"
     };
   </script>
-  <script src="<?= Config::get('http/root') ?>dist/admin.js"></script>
+  <script src="<?= Config::get('http/root') ?>dist/admin-js/admin.js"></script>
 <?php endif; ?>
 
 <?php if (Config::get('http/root') === 'http://goonvilletx.com/') : ?>

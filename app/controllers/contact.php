@@ -1,6 +1,6 @@
 <?php
 
-class About extends Controller
+class Contact extends Controller
 {
 	public function index()
 	{
@@ -28,7 +28,7 @@ class About extends Controller
       'user_data' => $user_data
     );
 
-		$this->view('Pages/about', array(
+	$this->view('Pages/contact', array(
       'header_data' => $header_data,
       'footer_data' => $footer_data,
       'page_data' => $pageData[0]

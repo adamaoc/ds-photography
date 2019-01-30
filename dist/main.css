@@ -330,6 +330,44 @@ template {
   display: none !important;
 }
 
+h1, h2, h3,
+h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.2em;
+  letter-spacing: -2px;
+  text-indent: -3px;
+}
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+  text-indent: -2px;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
 body {
   background: #222;
 }
@@ -352,6 +390,7 @@ body {
 }
 
 .navwrap {
+  position: fixed;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 0 3px 3px 0;
   width: 150px;
@@ -424,4 +463,48 @@ body {
 .site-footer p {
   font-size: 10px;
   padding-left: 1em;
+}
+
+.innerpage > header {
+  background: #eee;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerpage > main {
+  color: #fff;
+  padding: 4em 1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.innerpage > main p {
+  margin-top: 2rem;
+}
+
+.portfoliopage .navwrap {
+  background: white;
+}
+
+.portfolio header {
+  text-align: center;
+  color: white;
+  margin-left: 200px;
+  margin-right: 1em;
+  padding-top: 2rem;
+}
+.portfolio main {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: auto auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-left: 200px;
+  margin-right: 1em;
+}
+
+.work-category-box {
+  background: #eee;
+  width: 200px;
+  height: 200px;
 }

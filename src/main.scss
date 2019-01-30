@@ -1,5 +1,6 @@
 @import "./styles/variables";
 @import "./styles/reboot";
+@import "./styles/typography";
 
 body {
   background: $black;
@@ -22,6 +23,7 @@ body {
   }
 }
 .navwrap {
+  position: fixed;
   background: rgba(white, 0.4);
   border-radius: 0 3px 3px 0;
   width: 150px;
@@ -96,4 +98,53 @@ body {
     font-size: 10px;
     padding-left: 1em;
   }
+}
+
+.innerpage {
+  > header {
+    background: #eee;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  > main {
+    color: #fff;
+    padding: 4em 1em;
+    max-width: 600px;
+    margin: 0 auto;
+    p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.portfoliopage {
+  .navwrap {
+    background: white;
+  }
+}
+.portfolio {
+  header {
+    text-align: center;
+    color: white;
+    margin-left: 200px;
+    margin-right: 1em;
+    padding-top: 2rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin-left: 200px;
+    margin-right: 1em;
+  }
+}
+
+.work-category-box {
+  background: #eee;
+  width: 200px;
+  height: 200px;
 }

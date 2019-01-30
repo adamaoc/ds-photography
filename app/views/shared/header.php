@@ -24,13 +24,13 @@
   </head>
   
   <body>
-
+    <div id="adminNav"></div>
     <div class="navwrap">
       <a href="/" class="logo">DS</a>
       <div class="nav">
-        <a href="about">my work</a>
-        <a href="about">about me</a>
-        <a href="about">contact</a>
+        <a href="work">work</a>
+        <a href="about">about</a>
+        <a href="contact">contact</a>
       </div>
       <div class="social-nav">
         <a href="/" target="_blank">
