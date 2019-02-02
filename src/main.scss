@@ -1,48 +1,15 @@
 @import "./styles/variables";
 @import "./styles/reboot";
 @import "./styles/typography";
+@import "./styles/nav";
+@import "./styles/works";
 
 body {
   background: $black;
 }
 
-.logo {
-  font-size: 2rem;
-  color: #555;
-  z-index: 100;
-  padding: 0.25rem 2rem;
-  display: block;
-  font-weight: bolder;
-  transition: all ease-in-out 300ms;
-  border-radius: 0 5px 0px 0;
-  text-align: center;
-  &:hover {
-    background: rgba(255,255,255,0.7);
-    text-decoration: none;
-    color: #333;
-  }
-}
-.navwrap {
-  position: fixed;
-  background: rgba(white, 0.4);
-  border-radius: 0 3px 3px 0;
-  width: 150px;
-  margin-top: 6em;
-}
-.nav {
-  a {
-    color: #777;
-    padding: 1em;
-    text-align: center;
-    font-weight: bold;
-    display: block;
-    transition: all ease-in-out 300ms;
-    &:hover {
-      color: #444;
-      text-decoration: none;
-      background: rgba(white, 0.7);
-    }
-  }
+p {
+  margin-top: 2rem;
 }
 
 .homepage-wrap {
@@ -77,17 +44,6 @@ body {
   }
 }
 
-.social-nav {
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid #888;
-  padding: 0.5em;
-  
-  a {
-    padding: 0.5rem;
-  }
-}
-
 .site-footer {
   position: fixed;
   bottom: 0;
@@ -113,9 +69,6 @@ body {
     padding: 4em 1em;
     max-width: 600px;
     margin: 0 auto;
-    p {
-      margin-top: 2rem;
-    }
   }
 }
 
@@ -134,7 +87,7 @@ body {
   }
   main {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
@@ -143,8 +96,12 @@ body {
   }
 }
 
-.work-category-box {
-  background: #eee;
-  width: 200px;
-  height: 200px;
+.aboutpage {
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
 }

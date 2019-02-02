@@ -26,14 +26,16 @@
   <body>
     <div id="adminNav"></div>
     <div class="navwrap">
-      <a href="/" class="logo">DS</a>
-      <div class="nav">
-        <a href="work">work</a>
-        <a href="about">about</a>
-        <a href="contact">contact</a>
-      </div>
+      <a href="/" class="logo"><img src="public/logos/d-logo.png" width="150px" /></a>
+      <?php 
+      // <div class="nav">
+      //   <a href="work">work</a>
+      //   <a href="about">about</a>
+      //   <a href="contact">contact</a>
+      // </div>
+      ?>
       <div class="social-nav">
-        <a href="/" target="_blank">
+        <a href="https://twitter.com/denilsonnn17" target="_blank">
           <svg viewBox="0 0 612 612" width="20px" height="20px">
             <g>
              <path style="fill:#010002;" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
@@ -46,7 +48,7 @@
             </g>
           </svg>
         </a>
-        <a href="/" target="_blank">
+        <a href="https://www.instagram.com/denilsonnn17/" target="_blank">
           <svg viewBox="0 0 512 512" width="20px" height="20px">
             <path
               style="fill:#000000"
@@ -61,4 +63,4 @@
         </a>
       </div>
     </div>
-    <?php //getComponent('navigation', array('logo' => $data['logo'])); ?>
+  
