@@ -1,0 +1,49 @@
+.innerpage {
+    .navwrap {
+        background: #eee;
+    }
+    header {
+      background: #eee;
+      min-height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      h1 {
+          width: 100%;
+          margin-left: 0;
+          @media (min-width: 600px) {
+            width: 60%;
+            margin-left: 200px;
+          }
+      }
+    }
+    main {
+      color: #fff;
+      padding: 4em 1em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .site-footer {
+        position: initial;
+        text-align: center;
+    }
+}
+
+
+.aboutpage {
+    min-height: calc(100vh - 120px);
+    @media (min-width: 600px) {
+        min-height: calc(100vh - 70px);
+    }
+    h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        @media (min-width: 600px) {
+            font-size: 2rem;
+        }
+    }
+    p {
+        margin-top: 0;
+    }
+}

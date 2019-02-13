@@ -23,17 +23,16 @@
     <link rel="stylesheet" href="<?= Config::get('http/root') ?>dist/main.css">
   </head>
   
-  <body>
+  <body class="<?= $data['bodyclass'] ?>">
     <div id="adminNav"></div>
     <div class="navwrap">
-      <a href="/" class="logo"><img src="public/logos/d-logo.png" width="150px" /></a>
-      <?php 
-      // <div class="nav">
-      //   <a href="work">work</a>
-      //   <a href="about">about</a>
-      //   <a href="contact">contact</a>
-      // </div>
-      ?>
+      <a href="/" class="logo"><img src="/public/logos/d-logo.png" width="150px" /></a>
+      <div class="nav">
+        <button class="menu-flyout-btn">=</button>
+        <a href="work">work</a>
+        <a href="about">about</a>
+        <a href="contact">contact</a>
+      </div>
       <div class="social-nav">
         <a href="https://twitter.com/denilsonnn17" target="_blank">
           <svg viewBox="0 0 612 612" width="20px" height="20px">

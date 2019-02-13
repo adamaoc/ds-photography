@@ -21,6 +21,7 @@ class Home extends Controller
 
 
     $header_data = array(
+      'bodyclass' => 'homepage',
       'seo_title' => $pageData[0]['seo_title'],
       'seo_desc' => $pageData[0]['seo_desc'],
       'logo' => $school['header_logo']

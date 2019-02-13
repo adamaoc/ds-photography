@@ -17,6 +17,7 @@ class Contact extends Controller
     $socialModel = $this->model('SocialModel');
     $social_links = $socialModel->getSocialLinks();
     $header_data = array(
+      'bodyclass' => 'innerpage',
       'seo_title' => $pageData[0]['seo_title'],
       'seo_desc' => $pageData[0]['seo_desc'],
       'logo' => $school['header_logo']

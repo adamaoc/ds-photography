@@ -370,10 +370,9 @@ h6 {
 
 .navwrap {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
   padding-top: 0;
+  padding-left: 41px;
 }
 
 .logo {
@@ -382,12 +381,61 @@ h6 {
 }
 
 .social-nav {
+  margin-left: auto;
   display: flex;
   justify-content: center;
   padding: 0.5em;
 }
 .social-nav a {
   padding: 0.5rem;
+}
+
+.menu-flyout-btn {
+  position: absolute;
+  left: 180px;
+  background: white;
+  border: none;
+  border-radius: 0;
+  padding: 0.25rem 0.75rem;
+}
+.menu-flyout-btn:focus {
+  outline: none;
+}
+@media (min-width: 600px) {
+  .menu-flyout-btn {
+    display: none;
+  }
+}
+
+.nav {
+  background: white;
+  position: fixed;
+  top: 12px;
+  left: -180px;
+  width: 180px;
+  transition: left 200ms ease-in-out;
+}
+.nav.open {
+  left: 0;
+}
+.nav a {
+  color: #777;
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  transition: all ease-in-out 300ms;
+}
+.nav a:hover {
+  color: #444;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.7);
+}
+@media (min-width: 600px) {
+  .nav {
+    position: initial;
+    background: none;
+  }
 }
 
 @media (min-width: 600px) {
@@ -416,28 +464,14 @@ h6 {
     display: block;
   }
 
-  .nav a {
-    color: #777;
-    padding: 1em;
-    text-align: center;
-    font-weight: bold;
-    display: block;
-    transition: all ease-in-out 300ms;
-  }
-  .nav a:hover {
-    color: #444;
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.7);
-  }
-
   .social-nav {
     border-top: 1px solid #888;
   }
 }
 .work-category-box {
   background: #eee;
-  width: 400px;
-  height: 400px;
+  width: 150px;
+  height: 150px;
   background-size: cover;
   background-position: center center;
   color: black;
@@ -447,6 +481,13 @@ h6 {
   text-decoration: none;
   font-weight: bold;
   opacity: 0.8;
+  margin: 0 auto;
+}
+@media (min-width: 900px) {
+  .work-category-box {
+    width: 400px;
+    height: 400px;
+  }
 }
 .work-category-box span {
   background: #fff;
@@ -457,6 +498,86 @@ h6 {
   color: black;
   text-decoration: none;
   opacity: 1;
+}
+
+.innerpage .navwrap {
+  background: #eee;
+}
+.innerpage header {
+  background: #eee;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.innerpage header h1 {
+  width: 100%;
+  margin-left: 0;
+}
+@media (min-width: 600px) {
+  .innerpage header h1 {
+    width: 60%;
+    margin-left: 200px;
+  }
+}
+.innerpage main {
+  color: #fff;
+  padding: 4em 1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.innerpage .site-footer {
+  position: initial;
+  text-align: center;
+}
+
+.aboutpage {
+  min-height: calc(100vh - 120px);
+}
+@media (min-width: 600px) {
+  .aboutpage {
+    min-height: calc(100vh - 70px);
+  }
+}
+.aboutpage h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+@media (min-width: 600px) {
+  .aboutpage h3 {
+    font-size: 2rem;
+  }
+}
+.aboutpage p {
+  margin-top: 0;
+}
+
+.portfoliopage .navwrap {
+  background: #eee;
+}
+
+.portfolio header {
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+}
+.portfolio main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+  margin-left: 0;
+}
+@media (min-width: 600px) {
+  .portfolio main {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin-left: 200px;
+  }
 }
 
 body {
@@ -492,11 +613,16 @@ p {
   margin-top: 5em;
 }
 .homepage-caption span {
-  font-size: 2.5rem;
+  font-size: 2rem;
   max-width: 390px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1rem;
+}
+@media (min-width: 600px) {
+  .homepage-caption span {
+    font-size: 2.5rem;
+  }
 }
 
 .site-footer {
@@ -509,47 +635,4 @@ p {
 .site-footer p {
   font-size: 10px;
   padding-left: 1em;
-}
-
-.innerpage > header {
-  background: #eee;
-  min-height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.innerpage > main {
-  color: #fff;
-  padding: 4em 1em;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.portfoliopage .navwrap {
-  background: white;
-}
-
-.portfolio header {
-  text-align: center;
-  color: white;
-  margin-left: 200px;
-  margin-right: 1em;
-  padding-top: 2rem;
-}
-.portfolio main {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  margin-left: 200px;
-  margin-right: 1em;
-}
-
-.aboutpage h3 {
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-.aboutpage p {
-  margin-top: 0;
 }

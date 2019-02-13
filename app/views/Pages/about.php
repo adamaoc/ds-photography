@@ -1,5 +1,5 @@
 <?php getHeader($data['header_data']); ?>
-<div class="innerpage aboutpage">
+<div class="aboutpage">
     <header>
         <h1>About Denilson</h1>
     </header>

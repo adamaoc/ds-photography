@@ -3,7 +3,7 @@
 </div>
 <div class="portfolio">
     <header>
-        <h1>Category Title</h1>
+        <h1><?= $data['title'] ?></h1>
     </header>
     </main>
 </div>

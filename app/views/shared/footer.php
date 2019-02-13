@@ -15,7 +15,7 @@
   <script src="<?= Config::get('http/root') ?>dist/admin-js/admin.js"></script>
 <?php endif; ?>
 
-<?php if (Config::get('http/root') === 'http://denilson.photos' || 'http://denilson.photos/') : ?>
+<?php if (Config::get('http/root') === 'http://denilson.photos' || Config::get('http/root') === 'http://denilson.photos/') : ?>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133705201-1"></script>
   <script>

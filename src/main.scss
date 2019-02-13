@@ -3,6 +3,8 @@
 @import "./styles/typography";
 @import "./styles/nav";
 @import "./styles/works";
+@import "./styles/innerpages";
+@import "./styles/portfolio";
 
 body {
   background: $black;
@@ -36,11 +38,16 @@ p {
   align-items: flex-start;
   margin-top: 5em;
   span {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     max-width: 390px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1rem
+  }
+  @media (min-width: 600px) {
+    span {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -53,55 +60,5 @@ p {
   p {
     font-size: 10px;
     padding-left: 1em;
-  }
-}
-
-.innerpage {
-  > header {
-    background: #eee;
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  > main {
-    color: #fff;
-    padding: 4em 1em;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-}
-
-.portfoliopage {
-  .navwrap {
-    background: white;
-  }
-}
-.portfolio {
-  header {
-    text-align: center;
-    color: white;
-    margin-left: 200px;
-    margin-right: 1em;
-    padding-top: 2rem;
-  }
-  main {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    margin-left: 200px;
-    margin-right: 1em;
-  }
-}
-
-.aboutpage {
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 0;
-  }
-  p {
-    margin-top: 0;
   }
 }
